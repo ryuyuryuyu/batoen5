@@ -88,7 +88,7 @@
 /* 縦画面の小さいデバイス対応 */
 @media (max-width: 480px) and (max-height: 700px) {
   .move-list {
-    max-height: 120px;
+    max-height: 160px;
   }
   
   .move-item {
