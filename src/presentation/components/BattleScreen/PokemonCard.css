@@ -1,18 +1,19 @@
 .pokemon-card {
   border: 4px solid #2c3e50;
   border-radius: 10px;
-  padding: 5px; /* 余白も拡大 */
+  padding: 5px;
   color: #000;
-  min-height: 300px; /* 画像がしっかり見えるよう拡大 */
+  min-height: 300px;
   position: relative;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .card-frame {
   border: 2px solid #34495e;
   border-radius: 10px;
-  padding: 5px; /* 余白を拡大 */
+  padding: 5px;
   height: 100%;
   position: relative;
   backdrop-filter: blur(5px);
@@ -69,7 +70,6 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
-
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #bdc3c7;
@@ -218,46 +218,106 @@
 /* スマホ対応 */
 @media (max-width: 480px) {
   .pokemon-card {
-    border-width: 3px;
-    border-radius: 12px;
-    padding: 6px;
+    border-width: 2px;
+    border-radius: 8px;
+    padding: 4px;
+    min-height: 200px;
   }
   
   .card-frame {
-    padding: 12px;
+    padding: 6px;
+    border-width: 1px;
   }
   
   .card-header {
-    padding: 8px 12px;
-    margin-bottom: 12px;
+    padding: 6px 10px;
+    margin-bottom: 8px;
+    border-width: 1px;
   }
   
-  .pokemon-name {
+  .pokemon-symbol {
     font-size: 16px;
   }
   
-  .pokemon-hp {
+  .pokemon-name {
     font-size: 14px;
   }
   
+  .pokemon-hp {
+    font-size: 12px;
+    padding: 2px 6px;
+  }
+  
   .pokemon-image {
+    width: 120px;
+    height: 120px;
+    border-width: 2px;
+  }
+  
+  .image-glow {
     width: 140px;
     height: 140px;
   }
   
-  .image-glow {
-    width: 160px;
-    height: 160px;
-  }
-  
   .pokemon-image-section {
-    gap: 15px;
-    padding: 12px;
+    gap: 8px;
+    padding: 6px;
   }
   
   .type-badge {
-    padding: 4px 10px;
+    padding: 3px 8px;
+    font-size: 10px;
+    min-width: 40px;
+    border-width: 1px;
+  }
+  
+  .corner-decoration {
+    width: 15px;
+    height: 15px;
+    border-width: 2px;
+  }
+}
+
+/* 縦画面の小さいデバイス対応 */
+@media (max-width: 480px) and (max-height: 700px) {
+  .pokemon-card {
+    min-height: 160px;
+    padding: 3px;
+  }
+  
+  .card-frame {
+    padding: 4px;
+  }
+  
+  .card-header {
+    padding: 4px 8px;
+    margin-bottom: 6px;
+  }
+  
+  .pokemon-name {
     font-size: 12px;
-    min-width: 50px;
+  }
+  
+  .pokemon-hp {
+    font-size: 10px;
+  }
+  
+  .pokemon-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .image-glow {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .pokemon-image-section {
+    padding: 4px;
+  }
+  
+  .type-badge {
+    padding: 2px 6px;
+    font-size: 9px;
   }
 }
