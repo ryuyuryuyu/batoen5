@@ -207,7 +207,7 @@
         },
         "evolutions": [
             {
-                "before": "ゼニガメ",
+                "before": "カメール",
                 "after": "カメックス"
             }
         ]
