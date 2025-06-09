@@ -64,7 +64,7 @@
 /* スマホ対応 */
 @media (max-width: 480px) {
   .move-list {
-    max-height: 150px;
+    max-height: 180px;
     border-width: 1px;
   }
   
