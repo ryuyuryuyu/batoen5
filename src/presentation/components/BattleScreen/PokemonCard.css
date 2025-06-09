@@ -249,8 +249,8 @@
   }
   
   .pokemon-image {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     border-width: 2px;
   }
   
@@ -303,8 +303,8 @@
   }
   
   .pokemon-image {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
   }
   
   .image-glow {
