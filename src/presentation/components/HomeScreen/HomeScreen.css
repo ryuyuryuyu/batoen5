@@ -142,7 +142,7 @@
   background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
   border: 3px solid #dee2e6;
   border-radius: 12px;
-  padding: 12px;
+  padding: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
