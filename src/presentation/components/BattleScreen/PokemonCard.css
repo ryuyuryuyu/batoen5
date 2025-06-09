@@ -34,7 +34,7 @@
 .pokemon-name-section {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
 }
 
 .pokemon-symbol {
