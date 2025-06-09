@@ -1,0 +1,163 @@
+.battle-screen {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.battle-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(52, 152, 219, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(155, 89, 182, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.battle-container {
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  max-height: 750px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.95) 100%);
+  border: 4px solid #2c3e50;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.battle-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(45deg, transparent 49%, rgba(243, 156, 18, 0.1) 50%, transparent 51%),
+    linear-gradient(-45deg, transparent 49%, rgba(231, 76, 60, 0.1) 50%, transparent 51%);
+  border-radius: 16px;
+  pointer-events: none;
+}
+
+.battle-controls {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.top-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.quit-button {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  border: 3px solid #2c3e50;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quit-button:hover {
+  background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.devolve-button {
+  background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+  color: white;
+  border: 3px solid #2c3e50;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.devolve-button:hover {
+  background: linear-gradient(135deg, #8e44ad 0%, #7d3c98 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.evolve-button {
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  color: white;
+  border: 3px solid #2c3e50;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.evolve-button:hover {
+  background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* スマホ対応 */
+@media (max-width: 480px) {
+  .battle-screen {
+    padding: 8px;
+  }
+  
+  .battle-container {
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    gap: 15px;
+  }
+  
+  .battle-controls {
+    gap: 15px;
+  }
+  
+  .top-buttons {
+    gap: 8px;
+  }
+  
+  .quit-button,
+  .devolve-button,
+  .evolve-button {
+    padding: 8px 14px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+}

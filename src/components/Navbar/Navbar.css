@@ -1,0 +1,17 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  background-color: antiquewhite;
+  height: 65px;
+  font-weight: 600;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app {
+  padding-top: 64px; /* ヘッダーの高さに合わせて調整（例: 64px） */
+}

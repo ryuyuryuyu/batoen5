@@ -1,0 +1,135 @@
+.card {
+    width: 290px;
+    box-shadow: 7px 7px 8px 8px #777777;
+    border-radius: 10px;
+    background-color: white;
+}
+.cardName {
+    padding: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.cardNameEn {
+    font-size: 14px;
+    color: #888;
+    margin-top: -6px;
+    margin-bottom: 8px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.cardInfo {
+    padding: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.cardImgTypeRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.cardImg {
+    width: 96px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.cardTypesRight {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    margin-left: 0;
+}
+.typeBadge {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 2px;
+    box-shadow: 1px 1px 4px #bbb;
+    border: 1px solid #eee;
+    letter-spacing: 1px;
+    min-width: 48px;
+    text-align: center;
+}
+.cardData .abilityList {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 2px;
+}
+.cardImgTypeRowHorizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.cardTypesRightVertical {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+    margin-left: 16px;
+}
+.cardInfoRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+.cardInfoLeft {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 0px;
+    min-width: 40px;
+    align-items: flex-start;
+    width: 50%;
+}
+.cardInfoRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    min-width: 90px;
+    width: 50%;
+    margin-right: 40px;
+}
+.abilityListVertical {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 2px;
+    margin-right: 0;
+    align-items: flex-start;
+}
+.statsList {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    gap: 2px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+.statRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #444;
+    justify-content: flex-end;
+}
+.statName, .statValue {
+    text-align: center;
+}

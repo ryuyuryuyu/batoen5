@@ -1,0 +1,51 @@
+.damage-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.damage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.damage-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: 2px solid #000;
+  border-radius: 6px;
+  padding: 10px 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.damage-button:hover {
+  background-color: #ff5252;
+}
+
+.damage-button:active {
+  transform: translateY(1px);
+}
+
+.undo-button {
+  background-color: #666;
+  color: white;
+  border: 2px solid #000;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.undo-button:hover {
+  background-color: #555;
+}
+
+.undo-button:active {
+  transform: translateY(1px);
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "poison",
+    "name": "毒",
+    "description": "さいころを振ったら２０ダメージ。ただし、２と４が出た場合は、次からどくが解除される。",
+    "backgroundColor": "#8B008B",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "id": "paralysis",
+    "name": "マヒ",
+    "description": "さいころを振って攻撃し奇数の場合、攻撃に失敗する。偶数の場合は通常通り攻撃する。６が出たらマヒが解除される。",
+    "backgroundColor": "#FF8C00",
+    "textColor": "#000000"
+  },
+  {
+    "id": "sleep",
+    "name": "眠り",
+    "description": "さいころを振って、すべての攻撃は失敗する。３と５が出た場合、次から眠りが解除される。",
+    "backgroundColor": "#FFB6C1",
+    "textColor": "#C71585"
+  },
+  {
+    "id": "freeze",
+    "name": "凍結",
+    "description": "さいころを振って、すべての攻撃は失敗する。１と２が出た場合、次から凍結が解除される。",
+    "backgroundColor": "#B0E0E6",
+    "textColor": "#0000FF"
+  },
+  {
+    "id": "burn",
+    "name": "火傷",
+    "description": "さいころを振ったら２０ダメージ。ただし、２と４が出た場合は、火傷が解除される。",
+    "backgroundColor": "#DC143C",
+    "textColor": "#FFFF00"
+  },
+  {
+    "id": "confusion",
+    "name": "混乱",
+    "description": "さいころを振って偶数だったら、攻撃に失敗し、自分に２０ダメージ。偶数だったら通常通り攻撃できる。４と５が出た場合、次から混乱が解除される。",
+    "backgroundColor": "#ffffff",
+    "textColor": "#ff1493"
+  }
+]

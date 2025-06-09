@@ -1,0 +1,79 @@
+.dice-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #4CAF50;
+  color: white;
+  border: 3px solid #000;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dice-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.dice-button:active {
+  transform: scale(0.95);
+}
+
+.dice-button.rolling {
+  animation: shake 0.1s infinite;
+  background-color: #ff9800;
+}
+
+.dice-icon {
+  font-size: 32px;
+}
+
+.dice-value {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.rolling-text {
+  font-size: 8px;
+  margin-top: 2px;
+  text-align: center;
+  line-height: 1;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  75% { transform: translateX(2px); }
+}
+
+/* スマホ対応 */
+@media (max-width: 480px) {
+  .dice-button {
+    width: 70px;
+    height: 70px;
+    bottom: 15px;
+    right: 15px;
+    font-size: 20px;
+  }
+  
+  .dice-icon {
+    font-size: 28px;
+  }
+  
+  .dice-value {
+    font-size: 24px;
+  }
+  
+  .rolling-text {
+    font-size: 7px;
+  }
+}

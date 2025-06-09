@@ -1,0 +1,71 @@
+/* アプリケーション全体のリセットとベーススタイル */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+  background-color: #f0f0f0;
+  overflow: hidden; /* スクロールバーを非表示 */
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ボタンの共通スタイル */
+button {
+  font-family: inherit;
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* スクロールバーのカスタマイズ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* タッチデバイス対応 */
+@media (hover: none) and (pointer: coarse) {
+  button:hover {
+    /* タッチデバイスではhoverエフェクトを無効化 */
+    background-color: inherit;
+    transform: none;
+  }
+  
+  button:active {
+    /* タッチ時のフィードバック */
+    opacity: 0.8;
+  }
+}
+
+/* 小さい画面での調整 */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
