@@ -1,7 +1,7 @@
 .damage-buttons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   flex-shrink: 0;
 }
 
