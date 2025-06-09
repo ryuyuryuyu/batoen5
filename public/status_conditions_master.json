@@ -2,7 +2,7 @@
   {
     "id": "poison",
     "name": "毒",
-    "description": "さいころを振ったら２０ダメージ。ただし、２と４が出た場合は、次からどくが解除される。",
+    "description": "さいころを振ったら２０ダメージ。ただし、２と４が出た場合は、次から毒が解除される。",
     "backgroundColor": "#8B008B",
     "textColor": "#FFFFFF"
   },
